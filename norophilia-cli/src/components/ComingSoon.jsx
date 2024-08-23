@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import './i18n';
+import '../i18n';
 
 const ComingSoon = () => {
   const { t, i18n } = useTranslation();
@@ -25,12 +25,12 @@ const ComingSoon = () => {
           <a href="https://instagram.com" className="text-gray-600 hover:text-gray-900"><i className="fab fa-instagram"></i></a>
         </div>
         <select onChange={handleLanguageChange} className="p-2 rounded border border-gray-300">
-          <option value="en">English</option>
           <option value="fr">Français</option>
+          <option value="en">English</option>
           <option value="es">Español</option>
           <option value="ar">العربية</option>
           <option value="tr">Türkçe</option>
-          {/* Ajouter d'autres langues ici */}
+          
         </select>
       </div>
       <footer className="mt-8 text-sm text-gray-600">
